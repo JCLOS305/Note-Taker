@@ -1,6 +1,6 @@
 {
     "name": "Note Taker JCLOS",
-    "description": "This app takes notes, retrieves notes, and deletes them as well.",
+    "description": "This app takes notes, retrieves notes, and deletes them.",
     "keywords": [
         "productivity",
         "express",
