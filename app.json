@@ -1,0 +1,27 @@
+{
+    "name": "Note Taker JCLOS",
+    "description": "This app takes notes, retrieves notes, and deletes them as well.",
+    "keywords": [
+        "productivity",
+        "express",
+        "bootcamp",
+        "node",
+        "notes"
+],
+    "website": "null",
+    "repository": "https://github.com/jclos305/Note-Taker",
+    "success_url": "/",
+    "formation": {
+        "web": {
+            "quantity": 2,
+            "size": "Performance-M"
+    }
+},
+    "environments": {
+        "test": {
+            "scripts": {
+                "test": "jest"
+            }
+        }
+    }
+}
