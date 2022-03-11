@@ -1,3 +1,4 @@
+/// dependencies 
 const PORT = process.env.PORT || 3001;
 const fs = require('fs');
 const path = require('path');
@@ -7,9 +8,17 @@ const app = express();
 
 const allNotes = require('./db/db.json');
 
+// linked to assets 
+// Data Parsing 
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
+
+
+
+// Pull INDEX AND NOTES HTML
+ 
 
 app.get('/api/notes', (req, res) => {
     res.json(allNotes.slice(1));
@@ -27,6 +36,8 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+// GET and POST function set up.
+// Function to CREATE NEW NOTES
 function createNewNote(body, notesArray) {
     const newNote = body;
     if (!Array.isArray(notesArray))
@@ -51,6 +62,9 @@ app.post('/api/notes', (req, res) => {
     res.json(newNote);
 });
 
+
+ // Delete Function set up.
+// Function to DELETE NOTES
 function deleteNote(id, notesArray) {
     for (let i = 0; i < notesArray.length; i++) {
         let note = notesArray[i];
@@ -71,6 +85,10 @@ app.delete('/api/notes/:id', (req, res) => {
     deleteNote(req.params.id, allNotes);
     res.json(true);
 });
+
+
+
+   // LISTEN (set up server)
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
