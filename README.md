@@ -24,7 +24,7 @@ Note Taker can be installed to a local repo by cloning this code and installing 
 
 ## Usage
 
-![LINK TO HEROKU HOSTED WEBSITE](https://sleepy-cove-14241.herokuapp.com/)
+[LINK TO HEROKU HOSTED WEBSITE](https://sleepy-cove-14241.herokuapp.com/)
 
 ```md
 ![SCREENSHOT](assets/images/screenshot.png)
