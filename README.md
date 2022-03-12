@@ -14,7 +14,7 @@ Note Taker helps any user by adding or removing notes and storing them on a serv
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
-* [License](#license)
+* [Badges](#Badges)
 
 
 ## Installation
