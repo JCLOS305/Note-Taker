@@ -7,7 +7,7 @@ Note Taker is an app I designed using express , node and it's deployed to Heroku
 
 Note Taker helps any user by adding or removing notes and storing them on a server.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 
 
